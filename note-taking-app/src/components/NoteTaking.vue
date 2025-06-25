@@ -1,10 +1,15 @@
 <template>
   <div class="container mt-4">
-    <h1 class="mb-4">Vue CRUD Note Taking App</h1>
+    <h1 class="mb-4" style="color: black">Vue CRUD Note Taking App</h1>
 
     <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">{{ editingNote ? 'Edit Note' : 'Add New Note' }}</h5>
+      <div
+        class="card-body"
+        style="background-color: lightskyblue; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)"
+      >
+        <h5 class="card-title">
+          {{ editingNote ? 'Edit Note' : 'Add New Note' }}
+        </h5>
         <form @submit.prevent="saveNote">
           <div class="mb-3">
             <label for="noteTitle" class="form-label">Title</label>
@@ -43,7 +48,7 @@
         <div class="alert alert-info" role="alert">No notes yet. Create your first note above!</div>
       </div>
       <div v-else class="col-md-6 col-lg-4 mb-3" v-for="note in notes" :key="note.id">
-        <div class="card h-100">
+        <div class="card h-100" style="background-color: lightyellow">
           <div class="card-body">
             <h5 class="card-title">{{ note.title }}</h5>
             <p class="card-text">{{ note.content }}</p>

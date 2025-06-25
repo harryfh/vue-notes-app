@@ -1,0 +1,9 @@
+/* Minimal custom styles for the note-taking app */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+}

@@ -1,4 +1,4 @@
-# Vue CRUD Sample: Quiz Maker
+# Vue CRUD Sample: Note Taking App
 
 Vue + Typescript + Bootstrap CRUD sample.
 
